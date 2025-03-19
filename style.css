@@ -1,0 +1,140 @@
+:root {
+    --color-primary: #6C63FF;
+    --color-secondary: #F8F9FA;
+    --color-tertiary: #E0E0E0;
+    --color-button: #FF6B6B;
+    --color-button-hover: #E63946;
+    --color-text: #333333;
+    --color-white: #FFFFFF;
+}
+
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, var(--color-primary), #4B4DBA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--color-secondary);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-primary);
+}
+
+/* Seção de entrada */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid var(--color-tertiary);
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.button-add {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Lista de amigos */
+.name-list {
+    list-style-type: none;
+    color: var(--color-text);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.result-list {
+    margin-top: 10px;
+    color: #05DF05;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Botão de sorteio */
+.button-container {
+    margin-top: 20px;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button-draw:hover {
+    background-color: #534BC8;
+    transform: scale(1.05);
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
